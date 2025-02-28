@@ -56,5 +56,10 @@ class GetUpperBoundTest {
 		
 		assertEquals(expected, actual);
 	}
+	@Test
+	public void testIntersects_UpperBoundEdgeCase() {
+	    Range range = new Range(10, 20);
+	    assertTrue(range.intersects(19, 25)); 
+	}
 
 }
