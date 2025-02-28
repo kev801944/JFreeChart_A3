@@ -7,7 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Running tests
-      run:
+      run: |
         echo Starting the tests:
         curl https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/1.11.4/junit-platform-console-standalone-1.11.4.jar -o lib/junit-platform-console-standalone-1.11.4.jar
         javac -d bin/ src/org/jfree/data/Range.java
