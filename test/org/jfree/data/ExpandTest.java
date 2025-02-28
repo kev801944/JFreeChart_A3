@@ -57,7 +57,7 @@ class ExpandTest {
 	
 	@Test
 	void testForInvalidParameterException() {
-		assertThrows(InvalidParameterException.class, () -> Range.expand(null, 0.25, 0.5));
+		assertThrows(IllegalArgumentException.class, () -> Range.expand(null, 0.25, 0.5));
 	}
 }
 
