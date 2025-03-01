@@ -44,7 +44,7 @@ class EqualsTest {
     public void testEquals_DifferentUpperBound() {
         Range range1 = new Range(2.0, 10.0);
         Range range2 = new Range(2.0, 12.0);
-//        assertFalse(range1.equals(range2), "Should return false for different upper bounds");
+        assertFalse(range1.equals(range2), "Should return false for different upper bounds");
     }
 
     @Test

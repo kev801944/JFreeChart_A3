@@ -18,7 +18,7 @@ import org.junit.platform.suite.api.Suite;
 	IntersectsTest.class,
 	LengthTest.class,
 	RangeTest.class,
-	Shift.class,
+	ShiftTest.class,
 	ShiftNoZeroCrossingTest.class,
 	toStringTest.class
 })

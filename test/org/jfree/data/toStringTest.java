@@ -23,9 +23,9 @@ class toStringTest {
 		
 		String actual = positiveRange.toString();
 		
-		String expected =  "Range[1,7]";
+		String expected =  "Range[1.0,7.0]";
 		
-//		assertEquals(expected, actual);
+		assertEquals(expected, actual);
 	}
 
 	@Test
