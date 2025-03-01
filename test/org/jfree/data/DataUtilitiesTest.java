@@ -25,5 +25,15 @@ class DataUtilitiesTest {
 //      	verify(value, times(3)).getValue(anyInt(), anyInt());
 		assertEquals(1,1);
 	}
-	
+	  @Test
+	    void testCalculateColumnTotal_EmptyColumn() {
+		  value = mock(Values2D.class);
+ 	when(value.getColumnCount()).thenReturn(4);
+    	when(value.getRowCount()).thenReturn(3);
+    	when(value.getValue(0, 2)).thenReturn(5);
+    	when(value.getValue(1, 2)).thenReturn(7);
+    	when(value.getValue(2, 2)).thenReturn(1);
+	        when(value.getRowCount()).thenReturn(0);
+	        assertEquals(0, DataUtilities.calculateColumnTotal(value, 2), 0.01);
+	    }
 }  
