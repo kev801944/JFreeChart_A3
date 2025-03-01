@@ -29,7 +29,7 @@ class IntersectsTest {
 	@Test
     public void testIntersects_OverlappingRanges() {
         Range range = new Range(2.0, 10.0);
-//        assertTrue(range.intersects(5.0, 15.0), "Should return true for overlapping ranges");
+        assertTrue(range.intersects(5.0, 15.0), "Should return true for overlapping ranges");
     }
 
     @Test
@@ -41,8 +41,8 @@ class IntersectsTest {
     @Test
     public void testIntersects_BorderTouchingRange() {
         Range range = new Range(2.0, 10.0);
-//        assertTrue(range.intersects(10.0, 15.0), "Should return true when touching the upper boundary");
-//        assertTrue(range.intersects(0.0, 2.0), "Should return true when touching the lower boundary");
+        assertTrue(range.intersects(10.0, 15.0), "Should return true when touching the upper boundary");
+        assertTrue(range.intersects(0.0, 2.0), "Should return true when touching the lower boundary");
     }
 
     @Test
